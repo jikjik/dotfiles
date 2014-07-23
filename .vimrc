@@ -7,3 +7,5 @@
 :set shiftwidth=4
 :set backup
 
+:set clipboard+=unnamed
+
