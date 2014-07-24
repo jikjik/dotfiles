@@ -1,7 +1,4 @@
-
 :set fencs=iso-2022-jp,sjis,euc-jp
-
-:syntax on
 
 :filetype on
 :autocmd FileType c,cpp,perl set cindent
