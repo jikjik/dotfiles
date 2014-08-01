@@ -1,3 +1,8 @@
+setenv LANG ja_JP.UTF-8
+setenv LC_ALL ja_JP.UTF-8
+set dspmbyte=utf8
+
+
 case "${OSTYPE}" in
 darwin*)
   alias ls="ls -G"
