@@ -18,3 +18,21 @@
 " vimでyankした情報をクリップボードで利用する
 :set clipboard+=unnamed
 
+
+" plugin config 
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/vundle.git/  "vundleのディレクトリ
+call vundle#rc()
+
+" Bundle...は使用するプラグインを書く。詳細はguthubのREADMEが詳しい。
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
+filetype plugin indent on     " required!
+
+
+
+
