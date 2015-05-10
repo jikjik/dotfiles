@@ -14,15 +14,46 @@ set softtabstop=2 "$BO"B3$7$?6uGr$KBP$7$F%?%V%-!<$d%P%C%/%9%Z!<%9%-!<$G%+!<%=%k
 set autoindent "$B2~9T;~$KA0$N9T$N%$%s%G%s%H$r7QB3$9$k(B
 set smartindent "$B2~9T;~$KF~NO$5$l$?9T$NKvHx$K9g$o$;$F<!$N9T$N%$%s%G%s%H$rA}8:$9$k(B
 
-:filetype on
-:autocmd FileType c,cpp,perl set cindent
-:set backup
+filetype on
+autocmd FileType c,cpp,perl set cindent
+set backup
+
+
+"------------------------------------------------------------
+" $B%9%F!<%?%9%i%$%s(B
+"------------------------------------------------------------
+set laststatus=2 " $B%9%F!<%?%9%i%$%s$r>o$KI=<($9$k(B
+set ruler        " $B%9%F!<%?%9%i%$%s>e$K%k!<%i!<$rI=<($9$k!J%+!<%=%k$,2?9TL\$N2?NsL\$KCV$+$l$F$$$k$+!K(B
+
+" [$B%U%!%$%k%U%)!<%^%C%H(B][$B%(%s%3!<%G%#%s%0(B][$B2~9T%?%$%W(B] $B9T?t(B, $BNs?t!?AmNs?t(B
+set statusline=%F%m%r%h%w\%=[FILETYPE=%Y][ENC=%{&fenc}][%{&ff}]%=%c,\%l/%L
+
+" MEMO
+" powerline$B$H$$$&%W%i%0%$%s$rF~$l$k$H%9%F!<%?%9%i%$%s$r6/2=$G$-$k$h$&$@(B
+
+
+"------------------------------------------------------------
+" $B0\F0(B
+"------------------------------------------------------------
+" $B%$%s%5!<%H%b!<%I$G$b(Bhjkl$B$G0\F0!J(BCtrl$B$r2!$7$J$,$i!K(B
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
+" $B%$%s%5!<%H%b!<%I$G$b:o=|(B
+inoremap <C-x> <BS>
+
+
+" html $B$GJD$8%?%0$rJd40(B
+autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
 
 " vim$B$G(Byank$B$7$?>pJs$r%/%j%C%W%\!<%I$GMxMQ$9$k(B
 :set clipboard+=unnamed
 
-
-" plugin config 
+"------------------------------------------------------------
+" plugin 
+"------------------------------------------------------------
 set nocompatible
 filetype off
 
