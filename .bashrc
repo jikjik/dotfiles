@@ -16,4 +16,4 @@ linux*)
   ;;
 esac
 
-
+PS1="\u:\W\$ "
